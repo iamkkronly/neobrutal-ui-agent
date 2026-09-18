@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Neo Brutalism UI design contract reference demo">
+  <title>Neo Brutalism UI — Reference demo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Neo Brutalism UI home">
+      <span class="brand__mark" aria-hidden="true">NB</span>
+      <span>NEO<br>BRUTALISM<br>UI</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#principles">Principles</a>
+      <a href="#components">Components</a>
+      <a href="#agent">Agent contract</a>
+    </nav>
+    <button class="btn btn--small btn--ink" id="copyButton" type="button">Copy prompt</button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="pixel-dot" aria-hidden="true"></span> DESIGN CONTRACT / v1.0</p>
+        <h1 id="hero-title">Make it<br><span class="hero__accent">loud.</span><br>Make it clear.</h1>
+        <p class="hero__lede">A bold starter system for AI agents. Neo-Brutalism leads. Typography gives it a voice. Every other style knows its place.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#principles">Explore the rules <span aria-hidden="true">↘</span></a>
+          <a class="btn btn--secondary" href="#agent">Read the contract</a>
+        </div>
+      </div>
+      <div class="hero__poster" aria-label="Neo Brutalist poster with visual style priorities" role="img">
+        <div class="poster__topline"><span>ALWAYS ON</span><span>01 / 05</span></div>
+        <div class="poster__shape poster__shape--sun" aria-hidden="true"></div>
+        <div class="poster__word">NEO<br><span>FIRST</span></div>
+        <div class="poster__sticker">NO<br>SOFT<br>DEFAULTS</div>
+        <div class="poster__baseline">HARD EDGES / BIG TYPE / USEFUL ENERGY</div>
+      </div>
+    </section>
+
+    <section class="section-shell section" id="principles" aria-labelledby="principles-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE HIERARCHY</p>
+        <h2 id="principles-title">One strong system.<br>Four useful accents.</h2>
+      </div>
+      <div class="principle-grid">
+        <article class="principle-card principle-card--primary">
+          <div class="card-number">01</div>
+          <h3>Neo-Brutalism</h3>
+          <p>Hard borders, flat color, offset shadows, and a layout that shows its work.</p>
+          <span class="status-label">PRIMARY SYSTEM</span>
+        </article>
+        <article class="principle-card principle-card--type">
+          <div class="card-number">02</div>
+          <h3>Typography</h3>
+          <p>Give every idea the right volume. Big display type, compact labels, calm body copy.</p>
+          <span class="status-label">ALWAYS USE</span>
+        </article>
+        <article class="principle-card principle-card--pixel">
+          <div class="card-number">03</div>
+          <h3>Retro Pixel Art</h3>
+          <p>Small sprites and stickers add character when the product wants a little nostalgia.</p>
+          <span class="status-label">OPTIONAL ACCENT</span>
+        </article>
+        <article class="principle-card principle-card--clay">
+          <div class="card-number">04</div>
+          <h3>Clay + Glass</h3>
+          <p>Use tactile clay or contextual glass only when it makes one specific object easier to understand.</p>
+          <span class="status-label">USE WITH REASON</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell section section--split" id="components" aria-labelledby="components-title">
+      <div class="section-heading section-heading--compact">
+        <p class="eyebrow">02 / COMPONENT LAB</p>
+        <h2 id="components-title">States<br>that speak.</h2>
+        <p>Components should feel physical without making users guess what they do.</p>
+      </div>
+      <div class="lab-card">
+        <div class="lab-card__header">
+          <span class="status-label">LIVE REFERENCE</span>
+          <span class="pixel-label">CLICK / TAB / TRY</span>
+        </div>
+        <div class="lab-card__body">
+          <div>
+            <p class="metric-label">TODAY'S SIGNAL</p>
+            <p class="metric-value">84<span>%</span></p>
+          </div>
+          <div class="signal-bars" aria-label="Signal strength: 4 out of 5" role="img">
+            <span></span><span></span><span></span><span></span><span class="is-empty"></span>
+          </div>
+        </div>
+        <div class="lab-card__actions">
+          <button class="btn btn--primary" id="actionButton" type="button">Press me</button>
+          <button class="btn btn--secondary" id="stateButton" type="button">Toggle state</button>
+        </div>
+        <p class="live-message" id="liveMessage" role="status" aria-live="polite">Ready for input. Every action needs feedback.</p>
+      </div>
+    </section>
+
+    <section class="section-shell section section--dark" id="agent" aria-labelledby="agent-title">
+      <div class="agent-copy">
+        <p class="eyebrow eyebrow--light">03 / FOR YOUR NEXT AGENT</p>
+        <h2 id="agent-title">Give it the repo.<br>Get the attitude.</h2>
+        <p>Point an AI coding agent at this repository. The contract tells it what to build, what to avoid, and when an accent has earned its place.</p>
+      </div>
+      <div class="agent-prompt" aria-label="Agent prompt summary">
+        <div class="agent-prompt__bar"><span class="dot dot--pink"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span><span class="agent-prompt__file">AGENTS.md</span></div>
+        <pre><code><span class="code-key">PRIMARY</span> = <span class="code-value">"NEO_BRUTALISM"</span>
+<span class="code-key">ACCENTS</span> = [<span class="code-value">"TYPE"</span>, <span class="code-value">"PIXEL"</span>, <span class="code-value">"CLAY"</span>, <span class="code-value">"GLASS"</span>]
+<span class="code-key">RULE</span> = <span class="code-value">"USE_WITH_PURPOSE"</span>
+<span class="code-key">QUALITY</span> = [<span class="code-value">"CLEAR"</span>, <span class="code-value">"ACCESSIBLE"</span>, <span class="code-value">"RESPONSIVE"</span>]</code></pre>
+      </div>
+    </section>
+
+    <section class="section-shell section footer-cta" aria-labelledby="cta-title">
+      <div>
+        <p class="eyebrow">READY WHEN YOU ARE</p>
+        <h2 id="cta-title">Build the useful<br>weird thing.</h2>
+      </div>
+      <button class="btn btn--large btn--yellow" id="copyButtonBottom" type="button">Copy the agent prompt <span aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>NEO BRUTALISM UI / 2026</span>
+    <span>MADE FOR CLEARER AI-GENERATED INTERFACES</span>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
