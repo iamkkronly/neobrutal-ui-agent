@@ -1,4 +1,4 @@
-# UI Design Rules
+# NeoBrutal UI Design Rules
 
 **Read this file before building any UI.**
 

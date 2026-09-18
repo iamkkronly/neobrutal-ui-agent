@@ -1,4 +1,4 @@
-# Neo UI Design
+# NeoBrutal UI Agent
 
 Before creating or changing any interface, read **[`design.md`](design.md)**.
 
